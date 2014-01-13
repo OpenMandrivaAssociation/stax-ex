@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:          stax-ex
 Version:       1.7.1
 Release:       6.0%{?dist}
@@ -58,3 +58,37 @@ dos2unix LICENSE.txt
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE.txt
+
+%changelog
+* Mon Aug 05 2013 gil cattaneo <puntogil@libero.it> 1.7.1-6
+- rebuilt FTBFS in rawhide
+- swith to Xmvn
+- adapt to new guideline
+
+* Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Fri Feb 15 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 1.7.1-3
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Tue Oct 30 2012 Marek Goldmann <mgoldman@redhat.com> - 1.7.1-2
+- Added maven-enforcer-plugin BR
+
+* Tue Aug 28 2012 gil cattaneo <puntogil@libero.it> 1.7.1-1
+- Updated to upstream version 1.7.1
+
+* Sat Jul 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Fri Mar 9 2012 Juan Hernandez <juan.hernandez@redhat.com> 1.7-1
+- Updated to upstream version 1.7
+
+* Fri Mar 9 2012 Juan Hernandez <juan.hernandez@redhat.com> 1.4-2
+- Cleanup of the spec file
+
+* Sat Jan 21 2012 Marek Goldmann <mgoldman@redhat.com> 1.4-1
+- Initial packaging
